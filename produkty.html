@@ -11,21 +11,17 @@
 <body onload="OnLoad()">
     <div id="top"><b>Sklep elektroniczny</b></div>
     <div id="navBar">
-        <table id="ctable">
-            <tr>
-                <td onclick="window.location.href='index.html'">Strona główna</td>
-                <td onclick="window.location.href='produkty.html'">Produkty</td>
-                <td onclick="window.location.href='kontakt.html'">Kontakt</td>
-            </tr>
-        </table>
-        <table id="ftable">
-            <tr>
-                <td>Alfabetycznie<input type="radio" name="sort" id="alfa"></td>
-                <td>Cena rosnąco<input type="radio" name="sort" id="asc"></td>
-                <td>Cena malejąco<input type="radio" name="sort" id="desc"></td>
-                <td onclick="Filter()">Sortuj</td>
-            </tr>
-        </table>
+        <div class="flex-container">
+            <div class="flex-element" onclick="window.location.href='index.html'">Strona główna</div>
+            <div class="flex-element" onclick="window.location.href='produkty.html'">Produkty</div>
+            <div class="flex-element" onclick="window.location.href='kontakt.html'">Kontakt</div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-element">Alfabetycznie<input type="radio" name="sort" id="alfa"></div>
+            <div class="flex-element">Cena rosnąco<input type="radio" name="sort" id="asc"></div>
+            <div class="flex-element">Cena malejąco<input type="radio" name="sort" id="desc"></div>
+            <div class="flex-element" onclick="Filter()">Sortuj</div>
+        </div>
     </div>
     <div id="content">
     </div>
